@@ -21,9 +21,6 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-    /* AQI AI DISTINCT COLOR THEME
-       Teal / Cyan palette - intentionally different from the Diabetes app */
-
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
@@ -36,7 +33,7 @@ html, body, [class*="css"] {
         radial-gradient(circle at 10% 10%, rgba(59,130,246,0.12), transparent 25%),
         radial-gradient(circle at 90% 20%, rgba(139,92,246,0.10), transparent 25%),
         #090d16;
-    color: #ecfeff;
+    color: #f8fafc;
 }
 
 .block-container {
@@ -71,7 +68,7 @@ section[data-testid="stSidebar"] * {
 .sidebar-title {
     font-size: 22px;
     font-weight: 800;
-    color: #f8ffff;
+    color: #ffffff;
     margin-top: 5px;
 }
 
@@ -82,7 +79,7 @@ section[data-testid="stSidebar"] * {
 
 .sidebar-section {
     font-size: 10px;
-    color: #0f766e;
+    color: #64748b;
     font-weight: 700;
     letter-spacing: 1.5px;
     margin-top: 25px;
@@ -95,7 +92,7 @@ section[data-testid="stSidebar"] * {
     border-radius: 10px;
     background: rgba(255,255,255,0.025);
     border: 1px solid rgba(255,255,255,0.04);
-    color: #a5f3fc;
+    color: #cbd5e1;
     font-size: 13px;
 }
 
@@ -109,7 +106,7 @@ section[data-testid="stSidebar"] * {
 }
 
 .sidebar-about {
-    color: #67e8f9;
+    color: #94a3b8;
     font-size: 11px;
     line-height: 1.6;
 }
@@ -195,7 +192,7 @@ section[data-testid="stSidebar"] * {
     line-height: 1.05;
     font-weight: 800;
     letter-spacing: -2px;
-    color: #ecfeff;
+    color: #f8fafc;
 }
 
 .hero-title span {
@@ -210,7 +207,7 @@ section[data-testid="stSidebar"] * {
     max-width: 680px;
     font-size: 16px;
     line-height: 1.7;
-    color: #67e8f9;
+    color: #94a3b8;
 }
 
 .hero-meta {
@@ -229,7 +226,7 @@ section[data-testid="stSidebar"] * {
     border-radius: 10px;
     background: rgba(255,255,255,0.035);
     border: 1px solid rgba(255,255,255,0.07);
-    color: #a5f3fc;
+    color: #cbd5e1;
     font-size: 12px;
     font-weight: 500;
 }
@@ -328,7 +325,7 @@ section[data-testid="stSidebar"] * {
 
 .section-title {
     margin: 0;
-    color: #ecfeff;
+    color: #f8fafc;
     font-size: 22px;
     font-weight: 800;
     line-height: 1.2;
@@ -337,7 +334,7 @@ section[data-testid="stSidebar"] * {
 
 .section-description {
     margin-top: 6px;
-    color: #0f766e;
+    color: #64748b;
     font-size: 13px;
     font-weight: 500;
     line-height: 1.5;
@@ -396,7 +393,7 @@ div[data-testid="stNumberInput"]:hover {
 }
 
 div[data-testid="stNumberInput"] label {
-    color: #a5f3fc !important;
+    color: #cbd5e1 !important;
     font-size: 13px !important;
     font-weight: 600 !important;
     margin-bottom: 8px !important;
@@ -410,19 +407,19 @@ div[data-baseweb="input"] {
 }
 
 div[data-baseweb="input"]:focus-within {
-    border-color: #06b6d4 !important;
+    border-color: #3b82f6 !important;
     box-shadow: 0 0 0 3px rgba(59,130,246,0.12) !important;
 }
 
 div[data-baseweb="input"] input {
-    color: #ecfeff !important;
+    color: #f8fafc !important;
     font-size: 14px !important;
     font-weight: 500 !important;
 }
 
 button[data-testid="stNumberInputStepDown"],
 button[data-testid="stNumberInputStepUp"] {
-    color: #67e8f9 !important;
+    color: #94a3b8 !important;
     background: rgba(255,255,255,0.035) !important;
     border: none !important;
 }
@@ -436,7 +433,7 @@ button[data-testid="stNumberInputStepUp"] {
     height: 52px;
     border-radius: 14px;
     border: none;
-    background: linear-gradient(135deg, #0891b2, #7c3aed);
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
     color: white;
     font-size: 16px;
     font-weight: 700;
@@ -480,14 +477,14 @@ button[data-testid="stNumberInputStepUp"] {
 }
 
 .prediction-result-heading {
-    color: #ecfeff;
+    color: #f8fafc;
     font-size: 22px;
     font-weight: 800;
 }
 
 .prediction-result-subtitle {
     margin-top: 4px;
-    color: #0f766e;
+    color: #64748b;
     font-size: 12px;
 }
 
@@ -504,7 +501,7 @@ button[data-testid="stNumberInputStepUp"] {
 }
 
 .result-label, .stat-label {
-    color: #67e8f9;
+    color: #94a3b8;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: .7px;
@@ -513,14 +510,14 @@ button[data-testid="stNumberInputStepUp"] {
 
 .result-value {
     margin-top: 13px;
-    color: #ecfeff;
+    color: #f8fafc;
     font-size: 52px;
     font-weight: 800;
     line-height: 1.1;
 }
 
 .result-unit {
-    color: #0f766e;
+    color: #64748b;
     font-size: 12px;
     margin-top: 5px;
 }
@@ -536,11 +533,11 @@ button[data-testid="stNumberInputStepUp"] {
 
 .advice-box {
     background: rgba(255,255,255,0.035);
-    border-left: 4px solid #06b6d4;
+    border-left: 4px solid #3b82f6;
     border-radius: 10px;
     padding: 12px 15px;
     margin-top: 15px;
-    color: #a5f3fc;
+    color: #cbd5e1;
     font-size: 13px;
 }
 
@@ -550,7 +547,7 @@ button[data-testid="stNumberInputStepUp"] {
 }
 
 .stat-value {
-    color: #ecfeff;
+    color: #f8fafc;
     font-size: 28px;
     font-weight: 800;
     margin-top: 10px;
@@ -559,7 +556,7 @@ button[data-testid="stNumberInputStepUp"] {
 .stat-description {
     margin-top: 12px;
     font-size: 12px;
-    color: #0f766e;
+    color: #64748b;
 }
 
 /* =========================================================
@@ -574,7 +571,7 @@ button[data-testid="stNumberInputStepUp"] {
 }
 
 .chart-title {
-    color: #a5f3fc;
+    color: #cbd5e1;
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 12px;
@@ -594,7 +591,7 @@ button[data-testid="stNumberInputStepUp"] {
 }
 
 .precaution-title {
-    color: #ecfeff;
+    color: #f8fafc;
     font-size: 18px;
     font-weight: 800;
     margin-bottom: 12px;
@@ -602,7 +599,7 @@ button[data-testid="stNumberInputStepUp"] {
 
 .precaution-item {
     padding: 9px 0;
-    color: #a5f3fc;
+    color: #cbd5e1;
     font-size: 14px;
     border-bottom: 1px solid rgba(255,255,255,0.04);
 }
@@ -654,7 +651,7 @@ button[data-testid="stNumberInputStepUp"] {
 }
 
 .clinical-dashboard-footer b {
-    color: #a5f3fc;
+    color: #cbd5e1;
 }
 
 .footer {
@@ -662,7 +659,7 @@ button[data-testid="stNumberInputStepUp"] {
     margin-top: 35px;
     padding-top: 20px;
     border-top: 1px solid rgba(255,255,255,0.08);
-    color: #0f766e;
+    color: #64748b;
     font-size: 12px;
 }
 
@@ -732,7 +729,7 @@ with st.sidebar:
         '<div class="sidebar-section">MODEL</div>'
         '<div class="sidebar-info">'
         '<b>🤖 AI Prediction Model</b><br>'
-        '<span style="font-size:11px;color:#67e8f9;line-height:1.6;">'
+        '<span style="font-size:11px;color:#94a3b8;line-height:1.6;">'
         'Machine Learning based AQI estimation using pollutant concentrations.'
         '</span>'
         '</div>',
@@ -961,13 +958,13 @@ if predict_button:
             st.markdown('<div class="chart-title">📊 Pollutant Concentration Profile</div>', unsafe_allow_html=True)
 
             fig, ax = plt.subplots(figsize=(7, 4))
-            fig.patch.set_facecolor('#083344')
-            ax.set_facecolor('#083344')
+            fig.patch.set_facecolor('#0f172a')
+            ax.set_facecolor('#0f172a')
             ax.bar(labels, pollutants)
-            ax.set_ylabel("Concentration", color='#a5f3fc')
-            ax.set_title("Pollutant Levels", color='#ecfeff')
-            ax.tick_params(axis="x", rotation=35, colors='#67e8f9')
-            ax.tick_params(axis="y", colors='#67e8f9')
+            ax.set_ylabel("Concentration", color='#cbd5e1')
+            ax.set_title("Pollutant Levels", color='#f8fafc')
+            ax.tick_params(axis="x", rotation=35, colors='#94a3b8')
+            ax.tick_params(axis="y", colors='#94a3b8')
             ax.spines['bottom'].set_color('#334155')
             ax.spines['left'].set_color('#334155')
             ax.spines['top'].set_visible(False)
@@ -981,8 +978,8 @@ if predict_button:
             st.markdown('<div class="chart-title">🥧 Pollutant Distribution</div>', unsafe_allow_html=True)
 
             fig2, ax2 = plt.subplots(figsize=(7, 4))
-            fig2.patch.set_facecolor('#083344')
-            ax2.set_facecolor('#083344')
+            fig2.patch.set_facecolor('#0f172a')
+            ax2.set_facecolor('#0f172a')
 
             values = np.array(pollutants)
 
@@ -992,16 +989,16 @@ if predict_button:
                     labels=labels,
                     autopct="%1.1f%%",
                     startangle=90,
-                    textprops={'color': '#a5f3fc'}
+                    textprops={'color': '#cbd5e1'}
                 )
-                ax2.set_title("Pollutant Contribution", color='#ecfeff')
+                ax2.set_title("Pollutant Contribution", color='#f8fafc')
             else:
                 ax2.text(
                     0.5, 0.5,
                     "Enter pollutant values",
                     ha="center",
                     va="center",
-                    color='#67e8f9'
+                    color='#94a3b8'
                 )
                 ax2.axis("off")
 
