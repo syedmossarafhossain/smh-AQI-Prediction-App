@@ -331,44 +331,56 @@ except Exception as e:
 # SIDEBAR
 # =========================================================
 
-st.markdown(
-    '<div class="aqi-sidebar-card">'
+with st.sidebar:
 
-    '<div class="aqi-sidebar-header">'
-    '<div class="aqi-sidebar-icon">🌫️</div>'
-    '<div>'
-    '<div class="aqi-sidebar-title">AQI AI</div>'
-    '<div class="aqi-sidebar-subtitle">Air Quality Intelligence</div>'
-    '</div>'
-    '</div>'
+    # Logo / Branding
+    st.markdown("""
+        <div class="sidebar-logo">
+            <div class="sidebar-logo-icon">🌫️</div>
+            <div class="sidebar-title">AQI AI</div>
+            <div class="sidebar-subtitle">
+                Air Quality Intelligence
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
 
-    '<div class="sidebar-section">MENU</div>'
+    # Menu
+    st.markdown(
+        '<div class="sidebar-section">MENU</div>',
+        unsafe_allow_html=True
+    )
 
-    '<div class="sidebar-menu-item">📊 <span>Dashboard</span></div>'
-    '<div class="sidebar-menu-item">🔬 <span>AQI Prediction</span></div>'
-    '<div class="sidebar-menu-item">📈 <span>Pollutant Analysis</span></div>'
-    '<div class="sidebar-menu-item">🩺 <span>Health Guidance</span></div>'
+    st.markdown("📊 **Dashboard**")
+    st.markdown("🔬 **AQI Prediction**")
+    st.markdown("📈 **Pollutant Analysis**")
+    st.markdown("🩺 **Health Guidance**")
 
-    '<div class="sidebar-section">MODEL</div>'
+    # Model Section
+    st.markdown(
+        '<div class="sidebar-section">MODEL</div>',
+        unsafe_allow_html=True
+    )
 
-    '<div class="sidebar-info">'
-    '<div class="sidebar-info-title">🤖 AI Prediction Model</div>'
-    '<div class="sidebar-info-text">'
-    'Machine Learning based AQI estimation using pollutant concentrations.'
-    '</div>'
-    '</div>'
+    st.markdown("""
+        <div class="sidebar-info">
+            <b>AI Prediction Model</b><br>
+            <span style="font-size:12px;color:#9ca3af;">
+                Machine Learning based AQI estimation using
+                pollutant concentrations.
+            </span>
+        </div>
+    """, unsafe_allow_html=True)
 
-    '<div class="sidebar-section">ABOUT</div>'
+    # About Section
+    st.markdown(
+        '<div class="sidebar-section">ABOUT</div>',
+        unsafe_allow_html=True
+    )
 
-    '<div class="sidebar-about">'
-    '🌍 AQI AI analyzes major air pollutants and estimates the Air Quality Index.'
-    '</div>'
-
-    '</div>',
-
-    unsafe_allow_html=True
-)
-
+    st.caption(
+        "AQI AI analyzes major air pollutants "
+        "and estimates the Air Quality Index."
+    )
 
 # =========================================================
 # HEADER
