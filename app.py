@@ -709,7 +709,7 @@ with st.sidebar:
 
     st.markdown(
         '<div class="sidebar-logo">'
-        '<div class="sidebar-logo-icon">🌫️</div>'
+        '<div class="sidebar-logo-icon">🌍</div>'
         '<div class="sidebar-title">AQI AI</div>'
         '<div class="sidebar-subtitle">Air Quality Intelligence</div>'
         '</div>',
@@ -762,7 +762,7 @@ st.markdown(
     '<div class="hero-meta-item">🌫️ 8 Pollutants</div>'
     '</div>'
     '</div>'
-    '<div class="hero-visual"><div class="hero-orb"><div class="hero-orb-icon">🌫️</div></div></div>'
+    '<div class="hero-visual"><div class="hero-orb"><div class="hero-orb-icon">🌍</div></div></div>'
     '</div>',
     unsafe_allow_html=True
 )
