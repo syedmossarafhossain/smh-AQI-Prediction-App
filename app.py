@@ -371,17 +371,6 @@ with st.sidebar:
         </div>
     """, unsafe_allow_html=True)
 
-    # About Section
-    st.markdown(
-        '<div class="sidebar-section">ABOUT</div>',
-        unsafe_allow_html=True
-    )
-
-    st.caption(
-        "AQI AI analyzes major air pollutants "
-        "and estimates the Air Quality Index."
-    )
-
 # =========================================================
 # HEADER
 # =========================================================
