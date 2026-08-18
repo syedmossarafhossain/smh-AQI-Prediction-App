@@ -10,7 +10,7 @@ import os
 
 st.set_page_config(
     page_title="AQI AI | Air Quality Prediction",
-    page_icon="🌫️",
+    page_icon=os.path.join(BASE_DIR, "logo.png"),
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -709,7 +709,7 @@ with st.sidebar:
 
     st.markdown(
         '<div class="sidebar-logo">'
-        '<div class="sidebar-logo-icon">💨</div>'
+        '<div class="sidebar-logo-icon">🌍</div>'
         '<div class="sidebar-title">AQI AI</div>'
         '<div class="sidebar-subtitle">Air Quality Intelligence</div>'
         '</div>',
@@ -736,14 +736,6 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-    st.markdown(
-        '<div class="sidebar-section">ABOUT</div>'
-        '<div class="sidebar-about">'
-        '🌍 AQI AI analyzes major air pollutants and estimates the Air Quality Index.'
-        '</div>',
-        unsafe_allow_html=True
-    )
-
 # =========================================================
 # HERO — visual only
 # =========================================================
@@ -762,7 +754,7 @@ st.markdown(
     '<div class="hero-meta-item">🌫️ 8 Pollutants</div>'
     '</div>'
     '</div>'
-    '<div class="hero-visual"><div class="hero-orb"><div class="hero-orb-icon">💨</div></div></div>'
+    '<div class="hero-visual"><div class="hero-orb"><div class="hero-orb-icon">🌍</div></div></div>'
     '</div>',
     unsafe_allow_html=True
 )
